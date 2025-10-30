@@ -34,7 +34,6 @@ body {
   top: 0;
   z-index: 100;
   box-shadow: var(--shadow);
-  line-height: 35px;
 }
 
 .header-inner {
@@ -79,6 +78,8 @@ body {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(180deg, rgba(0,0,0,0.2), transparent);
+  line-height: 35px;
+}
 }
 
 .hero h1 {
