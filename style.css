@@ -147,3 +147,73 @@ body {
   font-size: 0.9rem;
   color: var(--text-90);
 }
+.nav a.active {
+  color: var(--accent-1);
+  text-decoration: underline;
+}
+
+/* Текстовое поле */
+textarea {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--text-100);
+  width: 100%;
+  resize: vertical;
+}
+.slider-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 80px;
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.7s ease;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* Кнопки */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: var(--text-100);
+  border: none;
+  font-size: 2rem;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+  }
